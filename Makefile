@@ -1,8 +1,8 @@
 VERSION := $(shell git describe --tags --dirty=-modified --always)
-SMOKE_TEST_IMAGE := quay.io/skupper/skupper-ocp-smoke-test-image
+SMOKE_TEST_IMAGE := quay.io/rhn-support-rjauhari/skupper-ocp-smoke-test-image
 DOCKER := docker
 TEST_BINARIES_FOLDER := /image/bin
-PLATFORM := linux/amd64,linux/s390x
+PLATFORM := linux/amd64,linux/s390x,linux/arm64
 
 all: build-smoke-image
 	$(info ************  Information ************)

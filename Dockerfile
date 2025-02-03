@@ -1,4 +1,4 @@
-FROM golang:1.21 AS builder
+FROM mirror.gcr.io/library/golang:1.21 AS builder
 
 WORKDIR /image
 COPY . .
